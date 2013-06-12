@@ -36,3 +36,7 @@ the lower level software for driving the motors, used by scratch_listener.py
 * hook up wires
 * 3-5v battery pack
 * robot base http://www.mindsetsonline.co.uk/product_info.php?cPath=17_134_685&products_id=1034
+
+# photos
+
+http://www.flickr.com/photos/matthewvenn/sets/72157633441674047/with/9027093148/
