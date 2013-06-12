@@ -46,39 +46,44 @@ def stop_all():
 #direction, how long to drive for, how fast to drive
 def drive(wheel,speed):
     if wheel == LEFT:
-        print "left"
+        print "left",
         dma = dma_l
         enable_pin = l_enable_pin
         forward_pin = l_forward_pin
         backward_pin = l_backward_pin
     elif wheel == RIGHT:
-        print "right"
+        print "right",
         dma = dma_r
         enable_pin = r_enable_pin
         forward_pin = r_forward_pin
         backward_pin = r_backward_pin
     else:
-        print "unknown wheel"
+        error_msg( "unknown wheel")
         return
 
 
     if speed > 100 or speed < -100:
-        print "speed should be > -100 and < 100"
+        error_msg("speed should be > -100 and < 100")
         return
 
     if speed > 0:
-        dir_pin = forward_pin 
-        print "forward"
+        RPIO.output(forward_pin, True)
+        RPIO.output(backward_pin, False)
+        print "forward",
+    elif speed < 0:
+        RPIO.output(forward_pin, False)
+        RPIO.output(backward_pin, True)
+        print "backward",
     else:
-        dir_pin = backward_pin
-        print "backward"
+        print "stop",
 
-    pwm_amount = speed * (1999/100)
+    pwm_amount = abs(speed * (1999/100))
 
     print "pwm:", pwm_amount
     PWM.add_channel_pulse(dma,enable_pin,0,pwm_amount)
-    RPIO.output(dir_pin, True)
 
 def end():
     PWM.cleanup()
 
+def error_msg(msg):
+    sys.stderr.write(msg + "\n")
