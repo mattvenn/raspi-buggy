@@ -167,6 +167,6 @@ The second is used to stop both motors:
 
 To find out more about RPIO and how PWM works to control the motors at different speeds, you can read the [documentation here.](http://pythonhosted.org/RPIO/)
 
-# photos
+# Photos
 
 Some [photos of the buggy and the pictures that it has drawn.](http://www.flickr.com/photos/matthewvenn/sets/72157633441674047/with/9027093148/)
