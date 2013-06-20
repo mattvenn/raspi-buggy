@@ -77,7 +77,7 @@ def drive(wheel,speed):
     else:
         print "stop",
 
-    pwm_amount = abs(speed * (1999/100))
+    pwm_amount = int(abs(speed * (1999/100)))
 
     print "pwm:", pwm_amount
     PWM.add_channel_pulse(dma,enable_pin,0,pwm_amount)
