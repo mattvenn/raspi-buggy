@@ -17,6 +17,7 @@ except scratch.scratch.ScratchError, e:
     print "couldn't connect - is scratch running?"
     print e
     exit(1)
+print "connected"
 
 def listen():
     while True:
