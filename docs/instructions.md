@@ -74,7 +74,8 @@ If all is well, the program will start printing lines like this:
     stop
     pause
 
-If you don't see the above then you probably have missed out [installing one of the libraries](# Download the buggy software)
+If you don't see the above then you probably have missed out [installing one of the libraries](Download-the-buggy-software)
+
 You can then connect the batteries, and providing your circuit is correct the buggy should start moving its motors!
 
 The test will run 10 times, to stop the test early, you can press control-C
