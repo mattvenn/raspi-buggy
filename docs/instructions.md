@@ -10,11 +10,21 @@ You will need:
 *  [400 point breadboard](http://oomlout.co.uk/collections/prototyping/products/breadboard-400-point)
 *  4 AA battery holder and 4 *rechargable batteries*
 *  [buggy unit](http://www.mindsetsonline.co.uk/product_info.php?cPath=17_134_685&products_id=1034)
-*  pen and bluetack
+*  pen and bluetack if you want to do some drawing.
+
+# Tools required
+
+* flat screwdriver
+* pliers
+* soldering iron?
+
+# Build the buggy
+
+Follow the instructions that came with the buggy, but don't put the wires through the central hole. Also, don't connect the switches to the motors. We'll use the l293d chip to control the motors instead.
 
 # Build the circuit
 
-follow this diagram to build the circuit, but don't insert the batteries yet. The most important parts to get right are:
+Follow this diagram to build the circuit, but don't insert the batteries yet. The most important parts to get right are:
 
 *  The black and red connections from the battery holder need to be the right way round.
 *  The l293d chip needs to be the right way round - the little notch should be on the right.
@@ -27,6 +37,7 @@ The l293d is the chip that amplifies the small current from the raspberry pi to 
 
 ## Log in to the raspberry pi
 
+TODO
 You will need to power up the raspberry pi and connect to it over the network.
 
 ## Download the buggy software
@@ -93,6 +104,8 @@ It drives the motors in different directions to perform a sequence of moves: a s
 # Scratch
 
 To use scratch to control the buggy, we run scratch on a different computer, and then send commands from scratch to the raspberry pi. To do that we need to use scratch's mesh function, which allows scratch to talk over the network to the raspberry pi.
+
+The reason why we don't run scratch on the pi and then connect via [VNC](http://en.wikipedia.org/wiki/Virtual_Network_Computing) is that we've found it's too slow and annoying for children (and adults!) to use. We could connect a keyboard, mouse and screen to the raspberry pi, but then the robot wouldn't be very free to drive around.
 
 ## Configure scratch for mesh
 
