@@ -8,7 +8,7 @@ You will need:
 *  some [female to male wires](http://oomlout.co.uk/products/premium-female-to-female-jumper-wires-x21)
 *  [l293d motor driver](http://oomlout.co.uk/products/motor-controller-l293d)
 *  [400 point breadboard](http://oomlout.co.uk/collections/prototyping/products/breadboard-400-point)
-*  4 AA battery holder and 4 *rechargable batteries*
+*  4 AA battery holder and 4 *rechargable batteries* *TODO*
 *  [buggy unit](http://www.mindsetsonline.co.uk/product_info.php?cPath=17_134_685&products_id=1034)
 *  pen and bluetack if you want to do some drawing.
 
@@ -16,7 +16,7 @@ You will need:
 
 * flat screwdriver
 * pliers
-* soldering iron?
+* soldering iron? *TODO*
 
 # Build the buggy
 
@@ -37,7 +37,7 @@ The l293d is the chip that amplifies the small current from the raspberry pi to 
 
 ## Log in to the raspberry pi
 
-TODO
+*TODO*
 You will need to power up the raspberry pi and connect to it over the network.
 
 ## Download the buggy software
