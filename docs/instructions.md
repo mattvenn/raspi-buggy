@@ -111,11 +111,7 @@ The reason why we don't run scratch on the pi and then connect via [VNC](http://
 
 Follow the [instructions here](http://wiki.scratch.mit.edu/wiki/Mesh#Mesh_by_Modification_of_Scratch) to enable mesh on scratch. 
 
-Download the [scratch demo](https://github.com/mattvenn/raspi-buggy/blob/master/buggy.sb?raw=true).
-
-Then start scratch, and [host Mesh](http://wiki.scratch.mit.edu/wiki/Mesh#How_to_Host_and_Join_Mesh_sessions). 
-
-Load the example buggy.sb you just downloaded. Before we can run it, we need to start the raspberry pi listening to scratch.
+Then [host Mesh](http://wiki.scratch.mit.edu/wiki/Mesh#How_to_Host_and_Join_Mesh_sessions). 
 
 ## Start Raspberry pi listening to scratch
 
@@ -143,7 +139,9 @@ Then either scratch isn't setup for mesh networking, the mesh network isn't enab
 
 ## Test the scratch connection
 
-Back in scratch, try pressing the arrow keys on your keyboard. Each arrow key should move a motor in one direction. You can press 2 buttons at once to use both motors. Now you can write your own scratch programs to draw some fun patterns!
+Download [the example buggy.sb scratch program](https://github.com/mattvenn/raspi-buggy/blob/master/buggy.sb?raw=true). And then load it in scratch.
+
+Try pressing the arrow keys on your keyboard. Each arrow key should move a motor in one direction. You can press 2 buttons at once to use both motors. Now you can write your own scratch programs to draw some fun patterns!
 
 # Controlling the buggy with Python
 
