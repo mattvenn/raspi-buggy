@@ -14,7 +14,10 @@ You will need:
 
 # Build the circuit
 
-follow this diagram to build the circuit, but don't insert the batteries yet.
+follow this diagram to build the circuit, but don't insert the batteries yet. The most important parts to get right are:
+
+*  The black and red connections from the battery holder need to be the right way round.
+*  The l293d chip needs to be the right way round - the little notch should be on the right.
 
 ![circuit](./buggy_bb.png)
 
@@ -71,6 +74,7 @@ If all is well, the program will start printing lines like this:
     stop
     pause
 
+If you don't see the above then you probably have missed out [installing one of the libraries](# Download the buggy software)
 You can then connect the batteries, and providing your circuit is correct the buggy should start moving its motors!
 
 The test will run 10 times, to stop the test early, you can press control-C
