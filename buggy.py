@@ -12,9 +12,10 @@ PWM.set_loglevel(PWM.LOG_LEVEL_ERRORS)
 import time
 
 #pins
-l_enable_pin = 2
+#i2c pins can be enabled high at boot - see http://www.raspberrypi.org/phpBB3/viewtopic.php?f=44&t=35321
+l_enable_pin = 4
 l_forward_pin = 3
-l_backward_pin = 4
+l_backward_pin = 2
 r_enable_pin = 17
 r_forward_pin = 27
 r_backward_pin = 22
