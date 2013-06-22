@@ -7,7 +7,7 @@ little demo to show buggy control via python
 
 buggy.stop_all()
 loops = 10
-max_speed = 30 
+max_speed = 60 
 pause_time = 1 #second
 drive_time = 1 #second
 
