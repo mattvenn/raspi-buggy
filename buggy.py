@@ -2,6 +2,7 @@
 import RPIO
 from RPIO import PWM
 RPIO.setwarnings(False)
+import sys
 
 PWM.setup()
 
