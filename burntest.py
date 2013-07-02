@@ -9,7 +9,7 @@ little demo to show buggy control via python
 buggy.stop_all()
 max_speed = 60 
 if len(sys.argv)==2:
-    max_speed = sys.argv[1]
+    max_speed = int(sys.argv[1])
     print "maxspeed:", max_speed
 
 pause_time = 1 #second
